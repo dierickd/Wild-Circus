@@ -1,0 +1,213 @@
+<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
+Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
+Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+
+<!DOCTYPE html>
+<html  lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Circus</title>
+  <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+</head>
+
+<body>
+    <header>
+      <div class="header">
+        <div class="title-header">
+          <p>Wild Circus <br>Dream awake</p>
+        </div>
+      </div>
+      <nav id="navbar" class="site-nav">
+        <div class="navbar-title">
+            <h1><a href="#">Wild Circus</a></h1>
+        </div>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="open desktop">
+          <li><a href="#perform" title="perform">Performances</a></li>
+          <li><a href="#about" title="about">About Us</a></li>
+          <li><a href="#prices" title="prices">Prices</a></li>
+          <li><a href="#contact" title="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <section class="perform" id="perform">
+        <div class="container">
+          <h2>Performances</h2>
+          <ul>
+            <!-- performance 1 -->
+            <li>
+              <img src="https://cdn.pixabay.com/photo/2015/02/28/17/44/circus-653851_960_720.jpg" alt="Laugh" title="Laugh">
+              <h3>Laugh</h3>
+              <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+            </li>
+            <!-- performance 2 -->
+            <li>
+              <img src="https://cdn.pixabay.com/photo/2018/04/12/23/06/magic-3315128__340.jpg" alt="Dream" title="Dream">
+              <h3>Dream</h3>
+              <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+            </li>
+            <!-- performance 3 -->
+            <li>
+              <img src="https://cdn.pixabay.com/photo/2016/02/24/08/31/girl-1219339_960_720.jpg" alt="Marvel at" title="Marvel at">
+              <h3>Marvel at</h3>
+              <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <div class="slide">
+            <div class="content-slide">
+              <p class="title">1955</p>
+              <p class="slide text">
+                  Creation of Wild Circus by the Wildon family in Belgium. The family circus consisted of six people: Mrs. and Mr. Wildon, their two children and two coaches.
+              </p>
+            </div>
+            <div class="content-slide">
+              <p class="title">1962</p>
+              <p class="slide text">
+                  First French tour, it was the real start in all of France, it was named "Le grand Wild" for the occasion.
+              </p>
+            </div>
+            <div class="content-slide">
+              <p class="title">1970</p>
+              <p class="slide text">
+                  For their 15th anniversary, the Wild Circus is offering itself a big top with a capacity of 200 people. The company now has 30 members. With 12 performances per week and more than 30 issues, Wild Circus confirms its place in the field.
+              </p>
+            </div>
+            <div class="content-slide">
+              <p class="title">1990</p>
+              <p class="slide text">
+                  The Wild Circus circus receives the Grand Prix National du cirque. Belgium will celebrate the event during a weekend of performance offered by the circus.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="prices" id="prices">
+        <div class="container">
+          <h2>Prices</h2>
+          <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+  
+                                    | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+            Semaines hors mercredi  |         |                         |                                |
+            week-end et mercredi    |         |                         |                                |
+          -->
+  
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Week off wednesday</th>
+                <th>Weekend and wednesday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adult</td>
+                <td>15€</td>
+                <td>18€</td>
+              </tr>
+              <tr>
+                <td>Children <br> &lsaquo; 12years</td>
+                <td>12€</td>
+                <td>9.5€</td>
+              </tr>
+              <tr>
+                <td>Group <br> &rsaquo; 10 persons</td>
+                <td>9€ / person</td>
+                <td>8€ / person</td>
+              </tr>
+              <tr>
+                <td>School</td>
+                <td>5.5€ / children</td>
+                <td>no school on weekends</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan=3>For schools, please book 72 hours in advance.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+      
+          <form action="#" method="post" id="form">
+            <div class="info">
+              <div class="item-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="John" required>
+              </div>
+              <div class="item-form">
+                <label for="mail">Your mail</label>
+                <input type="email" id="mail" name="mail" placeholder="email@exemple.com" required>
+              </div>
+              <div class="item-form">
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject" required>
+                  <option value="">Please choose an option</option>
+                  <option value="information">Information</option>
+                  <option value="claim">Claim</option>
+                  <option value="dysfunction">Dysfunction</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="item-form">
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" placeholder="message" rows="10" cols="15" required></textarea>
+              </div>
+            </div>
+            <div class="submit">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+    
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer">
+      <!-- TODO: Entre ton nom et prénom.
+        Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr) ainsi que le lien vers ton profil public France.ioi (avec les 16 premiers exercies de réalisés).
+        Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+      -->
+        <div class="icon">
+          <a href="https://wildcodeschool.fr" target="_blank">
+            <img src="https://odyssey.wildcodeschool.com/assets/android-icon-36x36-7c2d9c7f54e871748e4610c5793ba430eb929f9f774b2ef29ad8b4a1d22ee198.png" alt="Wild Code School" title="Wild Code School">
+          </a>
+          <a href="https://github.com/dierickd" target="_blank">
+            <img src="https://icongr.am/devicon/github-original.svg?size=40" alt="github" title="github">
+          </a>
+          <a href="http://www.france-ioi.org/user/perso.php?sLogin=paradox79" target="_blank">
+            <img src="http://www.france-ioi.org/dataSite/img/logo.png" alt="France-IOI" title="France-IOI">
+          </a>
+          <a href="https://www.sololearn.com/Profile/13466193" target="_blank">
+            <img src="https://cdn6.aptoide.com/imgs/9/7/9/9793aa7d2b6a453c6c9567a5441ae007_icon.png" alt="sololearn" title="sololearn">
+          </a>
+        </div>
+        <p>Wild Circus by <a href="http://dierick-dewi.fr/" target="_blank">DIERICK Déwi</a> on 04-07-2019</p>
+      </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
